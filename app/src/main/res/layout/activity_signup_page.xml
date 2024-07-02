@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="513dp"
+            android:layout_height="916dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/loginbackground" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/giveusernamelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="172dp"
+            android:text="@string/giveusernamelabel"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editgiveusername"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/editgiveusername"
+            android:inputType="text"
+            android:textColorHint="@color/linkBlue"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/giveusernamelabel" />
+
+        <TextView
+            android:id="@+id/giveemaillabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/giveemaillabel"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editgiveusername" />
+
+        <EditText
+            android:id="@+id/editgivemail"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/editgivemail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/linkBlue"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/giveemaillabel" />
+
+        <TextView
+            android:id="@+id/givepasswordlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/givepasswordlabel"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editgivemail" />
+
+        <EditText
+            android:id="@+id/editgivepassword"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/editgivepassword"
+            android:inputType="textPassword"
+            android:textColorHint="@color/linkBlue"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/givepasswordlabel" />
+
+        <TextView
+            android:id="@+id/givephonelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/givephonelabel"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editgivepassword" />
+
+        <EditText
+            android:id="@+id/editgivephone"
+            android:layout_width="284dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/editgivephone"
+            android:inputType="phone"
+            android:textColorHint="@color/linkBlue"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/givephonelabel" />
+
+        <Button
+            android:id="@+id/signupbutton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            app:backgroundTint="@color/lightBlue"
+            android:text="@string/signupbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editgivephone"
+            android:onClick="openLoginPage"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
